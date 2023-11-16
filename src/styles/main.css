@@ -1,0 +1,302 @@
+img {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #489fb5;
+}
+
+.line {
+  border: 0.15em solid #ede7e3;
+  max-width: 80%;
+  border-radius: 0.5em;
+  margin: auto;
+}
+
+.line-detail {
+  border: 0.15em solid #ede7e3;
+  max-width: 80%;
+  border-radius: 0.5em;
+  margin: 0.4em auto;
+}
+
+.skip {
+  position: absolute;
+  top: -2.5em;
+  left: 0;
+  padding: 0.3125em;
+  color: #ede7e3;
+  background-color: #16697a;
+  border-radius: 0.5em;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 0;
+}
+
+/* ! Drawer */
+.nav-container {
+  background-color: #489fb5;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-logo-nav {
+  width: 40%;
+  height: 5em;
+  margin: auto 0;
+}
+
+.drawer {
+  width: 65%;
+  height: 50%;
+  position: absolute;
+  transform: translate(-60em, 5em);
+  transition: transform 0.5s ease-in-out;
+  background-color: #16697a;
+  border-radius: 1em;
+}
+
+.drawer.show-drawer {
+  transform: translate(2em, 5em);
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0 2em;
+}
+
+.drawer li {
+  padding: 2.4em 0;
+  margin: 1em;
+}
+
+.drawer a {
+  text-decoration: none;
+  color: #ede7e3;
+  cursor: pointer;
+  padding: 2.4em;
+  font-size: larger;
+}
+
+.drawer a:hover {
+  background-color: #489fb5;
+  border-radius: 7%;
+}
+
+.hamburger {
+  font-size: 2em;
+  padding: 0.7em;
+  border: none;
+  background-color: #489fb5;
+  color: #ede7e3;
+  cursor: pointer;
+}
+
+/* ! Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+}
+
+.hero picture img {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
+
+.hero-content {
+  background-color: #489fb5;
+  box-shadow: -0.55em 0.55em #16697a;
+  border: 0.2em solid #ede7e3;
+  border-radius: 0.6em;
+  padding: 1.5em;
+  margin: 5% 10%;
+  font-size: 1.3em;
+  color: #ede7e3;
+  text-align: center;
+}
+
+.hero-title {
+  text-shadow: -0.1em 0.1em #16697a;
+  padding-bottom: 0.2em;
+}
+
+.hero-description {
+  font-size: 0.9em;
+}
+
+/* ! Content */
+.content {
+  margin: 1em auto;
+}
+
+.content-title {
+  color: #ede7e3;
+  text-align: center;
+}
+
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.7em;
+}
+
+.restaurant-card {
+  border: 0.2em solid #ede7e3;
+  background-color: #82c0cc;
+  border-radius: 1em;
+  margin: 0.625em;
+  padding: 0.625em;
+  width: 20.625em;
+}
+
+.restaurant-card img {
+  max-width: 100%;
+  border-radius: 0.5em;
+  margin: 0.625em auto;
+}
+
+.restaurant-card h3 {
+  margin: 1.2em auto;
+}
+
+.restaurant-card h3 a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 1.7em;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.restaurant-card h3 a:hover {
+  color: #ede7e3;
+}
+
+.restaurant-card p {
+  font-size: 0.875em;
+  padding: 0.3125em 0;
+}
+
+/* ! Restaurant Detail */
+.restaurant-detail {
+  border: 0.2em solid #ede7e3;
+  background-color: #82c0cc;
+  border-radius: 2em;
+  margin: 1em auto;
+  padding: 1.5em;
+  width: 70%;
+}
+
+.restaurant-detail h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.restaurant-detail img {
+  max-width: 100%;
+  border-radius: 0.5em;
+  margin: 0.625em auto;
+}
+
+.restaurant-info p {
+  font-size: 0.875em;
+  padding: 0.3125em 0;
+  text-align: justify;
+}
+
+.restaurant-info h4 {
+  margin-top: 0.5em;
+}
+
+.restaurant-menu h3 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.restaurant-menu h4 {
+  padding-top: 1em;
+}
+
+.restaurant-menu ol {
+  padding: 0.4em 1em;
+}
+
+.review-title {
+  text-align: center;
+  color: #ede7e3;
+  font-size: 1.5em;
+}
+
+.restaurant-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 5em;
+  margin-bottom: 1em;
+}
+
+.review-card {
+  border: 0.2em solid #ede7e3;
+  background-color: #82c0cc;
+  border-radius: 1em;
+  margin: 0.625em;
+  padding: 2em;
+  width: 18em;
+}
+
+.review-card hr {
+  margin-bottom: 0.7em;
+}
+
+.favorite {
+  padding: 0.1em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.3em;
+  border: 0;
+  background-color: transparent;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+/* ! Restaurant Favorite */
+#restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.7em;
+}
+
+/* ! Footer */
+footer {
+  background-color: #489fb5;
+  display: block;
+  font-size: 1em;
+  text-align: center;
+}
+
+.image-logo-foot {
+  width: 30%;
+  margin: 0.8em auto;
+}
+
+.copyright {
+  color: #ede7e3;
+  padding-bottom: 1em;
+}
